@@ -77,6 +77,7 @@ public class MasterActor extends AbstractActor {
                 } else if (exception instanceof NullPointerException) {
                     return restart();
                 } else if (exception instanceof IllegalArgumentException) {
+                    //stop
                     return stop();
                 } else {
                     return escalate();
